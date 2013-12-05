@@ -32,6 +32,8 @@ filetype plugin indent on     " required!
 
 let mapleader = ","
 let g:vroom_use_vimux = 1
+let g:VimuxOrientation = "h"
+let g:VimuxHeight = 50
 
 syntax on
 set relativenumber
