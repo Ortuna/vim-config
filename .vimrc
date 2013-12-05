@@ -12,8 +12,8 @@ Bundle 'vbundles/ctrlp'
 Bundle 'vbundles/vim-rails'
 Bundle 'airblade/vim-gitgutter' 
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-dispatch'
+Bundle 'benmills/vimux'
+Bundle 'skalnik/vim-vroom'
 
 filetype plugin indent on     " required!
 "
@@ -31,8 +31,7 @@ filetype plugin indent on     " required!
 "
 
 let mapleader = ","
-"let g:rspec_command = 'call Send_to_Tmux("bundle exec rspec {spec}\n")'
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+let g:vroom_use_vimux = 1
 
 syntax on
 set relativenumber
@@ -69,4 +68,3 @@ set mouse=a
 set cursorcolumn
 colorscheme ir_dark
 
-set clipboard=unnamed
