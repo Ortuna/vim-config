@@ -33,7 +33,7 @@ filetype plugin indent on     " required!
 let mapleader = ","
 let g:vroom_use_vimux = 1
 let g:VimuxOrientation = "h"
-let g:VimuxHeight = 50
+let g:VimuxHeight = 40
 
 syntax on
 set relativenumber
@@ -42,11 +42,6 @@ nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 nnoremap <leader>n :NERDTreeToggle .<CR>
 nnoremap <C-n> :NERDTreeToggle .<CR>
-" vim-rspec mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
 
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is four spaces
