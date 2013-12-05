@@ -14,6 +14,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'benmills/vimux'
 Bundle 'skalnik/vim-vroom'
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on     " required!
 "
@@ -38,8 +39,10 @@ let g:VimuxHeight = 40
 syntax on
 set relativenumber
 
-nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader>h :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>l :exe "resize " . (winheight(0) * 2/3)<CR>
+
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
 nnoremap <leader>n :NERDTreeToggle .<CR>
 nnoremap <C-n> :NERDTreeToggle .<CR>
 
