@@ -46,6 +46,7 @@ nnoremap <silent> <Leader>b :TagbarToggle<CR>
 nnoremap <leader>n :NERDTreeToggle .<CR>
 nnoremap <C-n> :NERDTreeToggle .<CR>
 
+set expandtab
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is four spaces
 set backspace=indent,eol,start
